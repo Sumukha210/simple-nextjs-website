@@ -1,0 +1,68 @@
+.card {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  box-shadow: 0px 0px 10px silver;
+  border-radius: 6px;
+  overflow: hidden;
+  border-left: 9px solid transparent;
+  transition: all 0.5s ease-in;
+}
+
+.card:hover {
+  border-left-color: royalblue;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  margin-left: 10px;
+}
+
+.img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.name {
+  font-size: clamp(1.2rem, 6vw, 2rem);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.email {
+  font-size: clamp(0.7rem, 4vw, 1.2rem);
+  text-transform: capitalize;
+  margin: 1rem 0;
+  color: gray;
+}
+
+.grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .img {
+    height: 80px;
+    width: 80px;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+.support {
+  color: royalblue;
+  cursor: pointer;
+}

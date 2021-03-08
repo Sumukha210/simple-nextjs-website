@@ -1,9 +1,17 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+:root {
+  --primary-color: rgb(178, 182, 197);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -11,6 +19,29 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.container {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.heading {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 1.4rem;
+}
+
+.phoneNumber {
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
+
+.singleList--container {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

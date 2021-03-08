@@ -1,0 +1,27 @@
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLink {
+  list-style: none;
+  text-transform: capitalize;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.navLink a {
+  text-decoration: none;
+  color: black;
+}
